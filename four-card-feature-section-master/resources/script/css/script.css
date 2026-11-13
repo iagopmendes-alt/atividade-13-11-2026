@@ -1,0 +1,95 @@
+/* 1. Reset básico para tirar margens padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa; 
+  color: #4c4e61; 
+  padding: 50px 25px; 
+}
+
+
+.container {
+  max-width: 375px;
+  margin: 0 auto; 
+}
+
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cabecalho h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+
+.titulo-fino {
+  display: block; /* Faz quebrar a linha */
+  font-weight: 200;
+}
+
+
+.titulo-grosso {
+  display: block;
+  font-weight: 600;
+}
+
+.cabecalho p {
+  color: #a3a5ae; 
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-direction: column; /* Empilha um cartão embaixo do outro */
+  gap: 25px; 
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px; 
+  padding: 28px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
+  border-top: 4px solid; 
+  
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #a3a5ae;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 30px; 
+}
+
+
+.card-cyan   { border-top-color: #45d3d3; }
+.card-red    { border-top-color: #ea5353; }
+.card-orange { border-top-color: #fcaf4a; }
+.card-blue   { border-top-color: #549ef2; }
+
+
+.card img {
+  width: 58px;
+  align-self: flex-end; 
+}
